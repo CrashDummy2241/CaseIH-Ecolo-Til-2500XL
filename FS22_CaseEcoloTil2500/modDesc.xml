@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="61">
+    <author>Model: ARM-Team FS22 version: PEOPO</author>
+    <version>2.0.0.0</version>
+    <title>
+        <en>Case Ecolo-Til 2500XL</en>
+    </title>
+    <description>
+        <en><![CDATA[The Ecolo-Til 2500 is an in-line ripper to effectively manage post-harvest residue through sizing, placement and incorporation.
+
+
+
+It's foldable with a working width of 16.6m
+- Required power: 550 HP
+
+Changelog 1.0.0.1
+- Compatible with new descVersion
+- Added connection hoses and wires
+- Added moving parts
+
+- Price: 80000 €]]></en>
+        <de><![CDATA[Der Ecolo-Til 2500 ist ein Reihen-Aufreißer, der die Nachernte-Rückstände durch Größensortierung, Platzierung und Einarbeitung effektiv verwaltet.
+
+Dies ist ein Zweierpack.
+- Langer Anhang
+- 3-Punkt Anhängerkupplung
+
+Er ist klappbar und hat eine Arbeitsbreite von 16,6 m.
+- Benötigte leistung: 525 PS
+
+Changelog 1.0.0.1
+- Kompatibel mit neuer descVersion
+- Verbindungsschläuche und Kabel hinzugefügt
+- Bewegliche Teile hinzugefügt
+
+- Preis: 80000 €]]></de>
+    </description>
+    <iconFilename>icon_ecoloTil2500.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="ecoloTil2500.xml"/>
+    </storeItems>
+</modDesc>

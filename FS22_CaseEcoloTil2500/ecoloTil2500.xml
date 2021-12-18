@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="plow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>Ecolo-Til 2500XL</en></name>
+        <specs>
+            <neededPower>550</neededPower>
+            <workingWidth>16.6</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_plow</function>
+        </functions>
+        <image>store.png</image>
+        <price>80000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CASEIH</brand>
+        <category>plows</category>
+        <shopTranslationOffset>0 0.5 0</shopTranslationOffset>
+        <shopRotationOffset>2.5 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1105624</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>174348</indexBufferMemoryUsage>
+        <textureMemoryUsage>23418344</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_plow</typeDesc>
+        <filename>ecoloTil2500.i3d</filename>
+        <size width="16.6" length="7"/>
+        <components>
+            <component centerOfMass="0 0.42 0.5" solverIterationCount="40" mass="8500"/>
+        </components>
+        <schemaOverlay name="IMPLEMENT" attacherJointPosition="0 0"/>
+        <speedLimit value="14"/>
+		<mapHotspot type="PLOW" />
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="0>7" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="0>8" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="2.8" repr="0>1|0" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    <wheelChock/>
+                        <wheelChock isInverted="true" />
+					</wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="2.8" repr="0>1|1" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="2..8" repr="0>1|2" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/360_70R16.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="2.8" repr="0>1|3" forcePointRatio="0.3" initialCompression="50" suspTravel="0.05" spring="124" damper="20"/>
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="0.3" repr="0>4|1" radius="0.27" width="0.35" mass="0.2" initialCompression="10" suspTravel="0.05" spring="30" damper="20" isSynchronized="false"/>
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="0.3" repr="0>5|1" radius="0.27" width="0.35" mass="0.2" initialCompression="10" suspTravel="0.05" spring="30" damper="20" isSynchronized="false"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <color0>SHARED_BLACK1</color0>
+            <hub linkNode="0>7" filename="xmls/hub_n30_5.xml" isLeft="true" scale="0.12 0.12 0.12"/>
+            <hub linkNode="0>8" filename="xmls/hub_n30_5.xml" isLeft="false" scale="0.12 0.12 0.12"/>
+            <hub linkNode="0>1|0" filename="xmls/hub_n31_5.xml" isLeft="true" scale="0.12 0.2 0.2"/>
+            <hub linkNode="0>1|1" filename="xmls/hub_n31_5.xml" isLeft="false" scale="0.12 0.2 0.2"/>
+            <hub linkNode="0>1|2" filename="xmls/hub_n31_5.xml" isLeft="true" scale="0.12 0.2 0.2"/>
+            <hub linkNode="0>1|3" filename="xmls/hub_n31_5.xml" isLeft="false" scale="0.12 0.2 0.2"/>
+        </hubs>
+    </wheels>
+    <speedRotatingParts>
+        <speedRotatingPart node="0>9|5|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>9|6|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>9|7|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>9|8|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>9|9|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>4|5|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>4|6|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>5|5|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+        <speedRotatingPart node="0>5|6|0|0" radius="0.27" foldMinLimit="0" foldMaxLimit="0.05"/>
+    </speedRotatingParts>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0" jointType="trailerLow"/>
+        </inputAttacherJoints>
+        <lowerAnimation name="lowerAnimation"/>
+        <support animationName="moveSupport"/>
+		<brakeForce force=".7" maxForce="2.4" maxForceMass="12000"/>
+    </attachable>
+    <connectionHoses>
+        <hose diameter="0.02" inputAttacherJointIndices="1" length="1.2" node="0>16|0|0" straighteningFactor="1" type="hydraulicIn">
+            <objectChange node="0>16|1|0|0" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose diameter="0.02" inputAttacherJointIndices="1" length="1.2" node="0>16|0|1" straighteningFactor="1" type="hydraulicOut">
+            <objectChange node="0>16|1|0|1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose diameter="0.02" inputAttacherJointIndices="1" length="1.2" node="0>16|0|2" straighteningFactor="1" type="hydraulicIn">
+            <objectChange node="0>16|1|1|0" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose diameter="0.02" inputAttacherJointIndices="1" length="1.2" node="0>16|0|3" straighteningFactor="1" type="hydraulicOut">
+            <objectChange node="0>16|1|1|1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose diameter="0.008" inputAttacherJointIndices="1" length="1" node="0>16|1|2|1|0" straighteningFactor="0.5" type="electric">
+            <objectChange node="0>16|1|2|0|0" rotationActive="0 0 0" rotationInactive="-90 0 0"/>
+            <objectChange node="0>16|1|2|1" visibilityActive="true" visibilityInactive="false"/>
+        </hose>
+    </connectionHoses>
+    <powerConsumer forceNode="0>" maxForce="60" neededMaxPtoPower="0"/>
+    <lights>
+        <realLights>
+            <low>
+                <light node="0>3|1|0" lightTypes="0"/>
+                <light node="0>3|1|0|0" lightTypes="0"/>
+            </low>
+            <!--<high>
+                <light node="0>3|1|0" lightTypes="0"/>
+                <light node="0>3|1|0|0" lightTypes="0"/>                
+            </high>-->
+			<turnLightLeft node="0>3|2|0|0"/>
+            <turnLightLeft node="0>3|2|0|1"/>
+            <turnLightRight node="0>3|2|1|0"/>
+            <turnLightRight node="0>3|2|1|1"/>
+            <brakeLight node="0>3|1|0"/>
+            <brakeLight node="0>3|1|0|0"/>
+        </realLights>
+        <sharedLight linkNode="0>3|0|0" filename="$data/shared/assets/reflectors/lizard/bigTriangle.xml"/>
+        <sharedLight linkNode="0>3|3|8" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|9" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|10" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|11" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|12" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|13" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>4|7|1" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>5|7|1" filename="$data/shared/assets/reflectors/lizard/redRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|0" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|1" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|2" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|3" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|4" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|5" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|6" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|3|7" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>4|7|0" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>5|7|0" filename="$data/shared/assets/reflectors/lizard/yellowRectangle_01.xml"/>
+        <sharedLight linkNode="0>3|0|5" filename="$data/shared/assets/lights/lizard/rearLight22Orange_left.xml"/>
+        <sharedLight linkNode="0>3|0|7" filename="$data/shared/assets/lights/lizard/rearLight22Orange_left.xml"/>
+        <sharedLight linkNode="0>3|0|6" filename="$data/shared/assets/lights/lizard/rearLight22Orange_right.xml"/>
+        <sharedLight linkNode="0>3|0|8" filename="$data/shared/assets/lights/lizard/rearLight22Orange_right.xml"/>
+        <sharedLight linkNode="0>3|0|1" filename="$data/shared/assets/lights/lizard/rearLight22Red.xml"/>
+        <sharedLight linkNode="0>3|0|2" filename="$data/shared/assets/lights/lizard/rearLight22Red.xml"/>
+        <sharedLight linkNode="0>3|0|3" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="0>3|0|4" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+		<sharedLight linkNode="0>4|15|0" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml"/>
+		<sharedLight linkNode="0>5|15|0" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml"/>
+		<sharedLight linkNode="0>4|15|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml"/>
+		<sharedLight linkNode="0>5|15|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml"/>
+    </lights>
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>" threshold="0.85" forceFactor="1" depthNode="0>12|0"/>
+    </groundReferenceNodes>
+    <workAreas>
+        <workArea functionName="processPlowArea" type="plow">
+            <area heightNode="0>10|2" startNode="0>10|0" widthNode="0>10|1"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+    </workAreas>
+    <workParticles>
+        <particleAnimation>
+            <node node="0>12|1|0" refNodeIndex="1" materialType="SOIL"/>
+            <node node="0>12|1|1" refNodeIndex="1" materialType="SOIL"/>
+			<node node="0>12|1|4" refNodeIndex="1" materialType="SOIL"/>
+			<node node="0>12|1|5" refNodeIndex="1" materialType="SOIL"/>
+        </particleAnimation>
+        <particle>
+            <node node="0>12|1|2" refNodeIndex="1" particleType="SOIL"/>
+            <node node="0>12|1|3" refNodeIndex="1" particleType="SOIL_SMOKE"/>
+        </particle>
+    </workParticles>
+    <animations>
+        <animation name="folding">
+            <part endRot="50 0 0" endTime="4" node="0>1" startRot="0 0 0" startTime="0"/>
+            <part endRot="0 0 110" endTime="8" node="0>4" startRot="0 0 0" startTime="4"/>
+            <part endRot="0 0 -110" endTime="8" node="0>5" startRot="0 0 0" startTime="4"/>
+			<sound template="defaultHydraulicSound" startTime="0"   endTime="4"   volumeScale="3" pitchScale="1.4" fadeIn="0.1" fadeOut="0.1" />
+			<sound template="defaultHydraulicSound" startTime="4"   endTime="8"   volumeScale="3" pitchScale="1.6" fadeIn="0.1" fadeOut="0.1" />
+			<sound template="hydraulicLayerTone"    startTime="2"   endTime="7"   volumeScale="3"   pitchScale="1.2" fadeIn="0.1" fadeOut="0.1" />
+		</animation>
+        <animation name="moveSupport">
+            <part duration="0.5" endTrans="0.067 0.412 2.856" node="0>2" startTime="0" startTrans="0.067 0.82 2.856"/>
+            <part duration="0.5" endRot="0 204.526 0" node="0>6|0" startRot="0 -1600 0" startTime="0"/>
+        </animation>
+    </animations>
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" foldMiddleAnimTime="0.5">
+                    <foldingPart animationName="folding" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+    <cylindered>
+        <movingParts>
+            <movingPart node="0>6|1" playSound="true" referenceFrame="0>1|4" referencePoint="0>1|4">
+                <translatingPart node="0>6|1|0"/>
+            </movingPart>
+            <movingPart node="0>6|2" playSound="true" referenceFrame="0>4|0" referencePoint="0>4|0">
+                <translatingPart node="0>6|2|0"/>
+            </movingPart>
+            <movingPart node="0>6|3" playSound="true" referenceFrame="0>5|0" referencePoint="0>5|0">
+                <translatingPart node="0>6|3|0"/>
+            </movingPart>
+            <movingPart node="0>4|3|0" referenceFrame="0>4|3|1|0" referencePoint="0>4|3|1|0">
+                <translatingPart node="0>4|3|0|0"/>
+            </movingPart>
+            <movingPart node="0>4|4|0" referenceFrame="0>4|4|1|0" referencePoint="0>4|4|1|0">
+                <translatingPart node="0>4|4|0|0"/>
+            </movingPart>
+            <movingPart node="0>5|3|0" referenceFrame="0>5|3|1|0" referencePoint="0>5|3|1|0">
+                <translatingPart node="0>5|3|0|0"/>
+            </movingPart>
+            <movingPart node="0>5|4|0" referenceFrame="0>5|4|1|0" referencePoint="0>5|4|1|0">
+                <translatingPart node="0>5|4|0|0"/>
+            </movingPart>
+            <movingPart node="0>9|0|0" referenceFrame="0>9|0|1|0" referencePoint="0>9|0|1|0">
+                <translatingPart node="0>9|0|0|0"/>
+            </movingPart>
+            <movingPart node="0>9|1|0" referenceFrame="0>9|1|1|0" referencePoint="0>9|1|1|0">
+                <translatingPart node="0>9|1|0|0"/>
+            </movingPart>
+            <movingPart node="0>9|2|0" referenceFrame="0>9|2|1|0" referencePoint="0>9|2|1|0">
+                <translatingPart node="0>9|2|0|0"/>
+            </movingPart>
+            <movingPart node="0>9|3|0" referenceFrame="0>9|3|1|0" referencePoint="0>9|3|1|0">
+                <translatingPart node="0>9|3|0|0"/>
+            </movingPart>
+            <movingPart node="0>9|4|0" referenceFrame="0>9|4|1|0" referencePoint="0>9|4|1|0">
+                <translatingPart node="0>9|4|0|0"/>
+            </movingPart>
+        </movingParts>
+        <movingTools>
+            <movingTool node="0>1" wheelIndices="3 4 5 6">
+                <dependentPart node="0>6|1"/>
+            </movingTool>
+            <movingTool node="0>4" wheelIndices="7">
+                <dependentPart node="0>6|2"/>
+            </movingTool>
+            <movingTool node="0>5" wheelIndices="8">
+                <dependentPart node="0>6|3"/>
+            </movingTool>
+            <movingTool node="0>4|3|1">
+                <dependentPart node="0>4|3|0"/>
+            </movingTool>
+            <movingTool node="0>4|4|1">
+                <dependentPart node="0>4|4|0"/>
+            </movingTool>
+            <movingTool node="0>5|3|1">
+                <dependentPart node="0>5|3|0"/>
+            </movingTool>
+            <movingTool node="0>5|4|1">
+                <dependentPart node="0>5|4|0"/>
+            </movingTool>
+            <movingTool node="0>9|0|1">
+                <dependentPart node="0>9|0|0"/>
+            </movingTool>
+            <movingTool node="0>9|1|1">
+                <dependentPart node="0>9|1|0"/>
+            </movingTool>
+            <movingTool node="0>9|2|1">
+                <dependentPart node="0>9|2|0"/>
+            </movingTool>
+            <movingTool node="0>9|3|1">
+                <dependentPart node="0>9|3|0"/>
+            </movingTool>
+            <movingTool node="0>9|4|1">
+                <dependentPart node="0>9|4|0"/>
+            </movingTool>
+        </movingTools>
+    </cylindered>
+    <randomlyMovingParts>
+        <randomlyMovingPart node="0>4|3|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>4|4|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>5|3|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>5|4|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>9|0|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>9|1|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>9|2|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>9|3|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+        <randomlyMovingPart node="0>9|4|1" refNodeIndex="1" rotMean="1 0" rotAxis="1" rotVariance="0.25 -0.25" rotTimeMean="0.1246 0.1246" rotTimeVariance="0.03 0.03" pauseMean="0.001 0.1246" pauseVariance="0.004 0.01" isSpeedDependent="true"/>
+    </randomlyMovingParts>
+    <foliageBending>
+        <bendingNode minX="-1.0" maxX="1.0" minZ="-2.2" maxZ="0.7" yOffset="0.5"/>
+        <bendingNode minX="0.8" maxX="2.6" minZ="-1.7" maxZ="0.9" yOffset="-0.5" node="0>4"/>
+        <bendingNode minX="-2.6" maxX="-0.8" minZ="-1.7" maxZ="0.9" yOffset="-0.5" node="0>5"/>
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+	<plow>
+        <sounds>
+            <work template="DEFAULT_CULTIVATOR_WORK" linkNode="0>"/>
+        </sounds>
+    </plow>
+    <ai>
+        <allowTurnBackward value="false"/>
+        <areaMarkers leftNode="0>11|0|0" rightNode="0>11|0|1" backNode="0>11|0|2"/>
+        <collisionTrigger node="0>11|2"/>
+        <needsLowering value="true"/>
+        <turningRadiusLimitation radius="5"/>
+    </ai>
+    <!--Non converted elements, might require manual conversion or are obsolete:
+
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle>
+    <wheels>
+        <rimColor>SHARED_GREY1</rimColor>
+    </wheels>
+
+    <lights>
+        <realLights>
+            <low>
+                <turnLightLeft node="0>3|2|0|0"/>
+                <turnLightLeft node="0>3|2|0|1"/>
+                <turnLightRight node="0>3|2|1|0"/>
+                <turnLightRight node="0>3|2|1|1"/>
+                <brakeLight node="0>3|1|0"/>
+                <brakeLight node="0>3|1|0|0"/>
+            </low>
+        </realLights>
+    </lights>
+
+    <attachable>
+        <brakeForce>0.7</brakeForce>
+    </attachable>
+
+    <plow>
+        <sounds>
+            <work template="DEFAULT_CULTIVATOR_WORK" linkNode="0>"/>
+        </sounds>
+    </plow>
+</vehicle>
+-->
+</vehicle>
